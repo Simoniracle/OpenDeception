@@ -54,7 +54,6 @@ class Qwen(TargetLLM):
             "version": self.version,
         }
     
-
 if __name__ == '__main__':
     llm = Qwen()
     ans = llm.chat('你好')

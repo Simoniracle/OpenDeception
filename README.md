@@ -27,7 +27,7 @@ Separates the AI deceiver’s thinking process from its final response during ge
 
 llm.py: 
 
-Specifies the LLM to be used in simulated conversations.
+Specifies the LLM class used in simulated conversations.
 
 com_generate.py: 
 

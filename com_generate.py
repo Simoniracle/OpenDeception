@@ -6,9 +6,7 @@ import os
 os.environ['DASHSCOPE_API_KEY'] = ""
 import dashscope
 from http import HTTPStatus
-# your api_key
- API_KEY = ""
-url = "https://api.minimax.chat/v1/text/chatcompletion_v2"
+
 DEFAULT_PROMPT = "You are a helpful assistant."
 
 

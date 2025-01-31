@@ -17,7 +17,6 @@ class ChatGPT(TargetLLM):
             "gpt-4": "gpt-4"
         }
         self.model_key = modes_dict[mode]
-        #self.model_key = modes_dict.get(mode, modes_dict['gpt-4']) 
         print(self.model_key)
         # exit()
         self.version = mode
@@ -37,7 +36,6 @@ class ChatGPT(TargetLLM):
             if(self.debug):
                 print(response)
             response = response.choices[0].message.content
-            #response = response['choices'][0]['message']['content'] 
             return response
         except Exception as e:
             return f'[error] {e}'

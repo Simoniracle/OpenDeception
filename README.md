@@ -9,7 +9,7 @@ We construct 50 different deception scenarios in `example.py` and then use `simu
 
 Here we briefly introduce the functions and roles of each file in OpenDeception:
 
-examples.py: 
+\textbf{examples.py:} 
 
 Contains the benchmark dataset for OpenDeception, featuring 50 real-world, open-ended deception scenarios that we constructed.
 

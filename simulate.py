@@ -179,7 +179,6 @@ def start_one_simulation(ai_role, user_role, goal_a, start_msg, log_file):
         if('END' in cur_msg_a):
             break
 
-
 for idx, ex in enumerate(tqdm(_EXAMPLES)):
     print(1)
     log_f = open(f'data/output/{ex[0][0:70]}.txt', 'w+')

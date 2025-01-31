@@ -25,6 +25,10 @@ utils.py:
 
 Separates the AI deceiver’s thinking process from its final response during generation.
 
+llm.py: 
+
+Specifies the LLM to be used in simulated conversations.
+
 com_generate.py: 
 
 Manages error handling for generated messages.

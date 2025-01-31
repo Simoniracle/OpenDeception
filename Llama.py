@@ -51,7 +51,6 @@ class Llama(TargetLLM):
         "version": self.version,
     }
 
-
 if __name__ == '__main__':
     llm = Llama(mode='llama3.1-70b-instruct')
     ans = llm.chat('hello')

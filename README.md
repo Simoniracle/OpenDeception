@@ -10,10 +10,15 @@ We construct 50 different deception scenarios in `example.py` and then use `simu
 Here we briefly introduce the functions and roles of each file in OpenDeception:
 
 examples.py: Contains the benchmark dataset for OpenDeception, featuring 50 real-world, open-ended deception scenarios that we constructed.
+
 simulate.py: The core file responsible for implementing dialogue simulation. It defines system prompts for both the AI deceiver and AI user and facilitates the dialogue process between these two LLM-based agents.
+
 agent.py: Sets up an agent specifically for conversations, handling message reception, historical message tracking, and response generation.
+
 utils.py: Separates the AI deceiver’s thinking process from its final response during generation.
+
 com_generate.py: Manages error handling for generated messages.
+
 llama.py, qwen.py, and gpt.py: Handle LLM API calls, covering a total of 11 mainstream LLMs evaluated in our study.
 
 # data

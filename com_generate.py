@@ -9,10 +9,6 @@ from http import HTTPStatus
 
 DEFAULT_PROMPT = "You are a helpful assistant."
 
-
-
-
-
 def chat_with_history(messages):
     return _qwen15_32b_chat(messages)
 

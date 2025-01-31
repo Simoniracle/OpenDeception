@@ -8,6 +8,7 @@ from openai import OpenAI
 class ChatGPT(TargetLLM):
     # your api_key
     api_key=""
+    
     def __init__(self, mode='gpt-3.5-turbo', secret=api_key, debug=False):
         self.api_key = secret
         self.debug = debug

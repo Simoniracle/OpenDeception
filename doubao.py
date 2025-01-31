@@ -3,8 +3,10 @@
 from volcenginesdkarkruntime import Ark
 import os
 
+# your api_key
+api_key=""
 class Doubao(object):
-    def __init__(self, mode='doubao-lite', secret='2dc5d6ce-0708-4253-a4d2-43e087160c59', debug=False):
+    def __init__(self, mode='doubao-lite', secret=api_key, debug=False):
         self.secret = secret
         self.mode = mode
         modes_dict = {

@@ -2,10 +2,11 @@ import requests
 import json
 import time
 import os
-# your DASHSCOPE_API_KEY
-os.environ['DASHSCOPE_API_KEY'] = ""
 import dashscope
 from http import HTTPStatus
+
+# your DASHSCOPE_API_KEY
+os.environ['DASHSCOPE_API_KEY'] = ""
 
 DEFAULT_PROMPT = "You are a helpful assistant."
 

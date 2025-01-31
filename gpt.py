@@ -13,11 +13,8 @@ class ChatGPT(TargetLLM):
         self.debug = debug
         self.url = "https://api.aiproxy.io/v1"
         modes_dict = {
-            # 10
             "gpt-3.5-turbo": "gpt-3.5-turbo",
-            # 30
             "gpt-4o": "gpt-4o",
-            # 100
             "gpt-4": "gpt-4"
             
         }
@@ -36,13 +33,6 @@ class ChatGPT(TargetLLM):
         )
         try:
             response = client.chat.completions.create(
-                # messages=[
-                #     {
-                #         "role": "user",
-                #         #"content": prompt
-                #         "content": [{"type": "text", "text": prompt}]
-                #     }
-                # ],
                 model=self.model_key,
                 messages = messages
             )

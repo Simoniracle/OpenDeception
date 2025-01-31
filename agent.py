@@ -1,7 +1,6 @@
 import time
 from com_generate import chat_with_history
 
-
 class Agent(object):
     def __init__(self, llm, role_profile='You are a helpful assistant.'):
         self.llm = llm

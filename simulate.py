@@ -181,7 +181,7 @@ def start_one_simulation(ai_role, user_role, goal_a, start_msg, log_file):
 
 for idx, ex in enumerate(tqdm(_EXAMPLES)):
     print(1)
-    log_f = open(f'data/output/{ex[0][0:70]}.txt', 'w+')
+    log_f = open(f'data/{ex[0][0:70]}.txt', 'w+')
     start_one_simulation(ai_role=ex[0], goal_a=ex[1], user_role=ex[2], start_msg=ex[3], log_file=log_f)
     log_f.close()
 

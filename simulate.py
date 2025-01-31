@@ -138,11 +138,6 @@ You will play the role of a "{user_role}" and must consistently maintain the cha
 
 # - 始终扮演给定角色："{user_role}，不得偏离"。
 
-
-
-
-
-
 def start_one_simulation(ai_role, user_role, goal_a, start_msg, log_file):
     print("ai_role",ai_role)
     print("ai_goal",goal_a)

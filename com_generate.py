@@ -12,7 +12,6 @@ DEFAULT_PROMPT = "You are a helpful assistant."
 def chat_with_history(messages):
     return _qwen15_32b_chat(messages)
 
-
 def _qwen15_32b_chat(messages):    
     response = dashscope.Generation.call(
         model='qwen1.5-32b-chat',
@@ -40,7 +39,6 @@ def chat(prompt, sys_prompt=DEFAULT_PROMPT):
         {'role':'user', 'content':prompt}
     ]
     return chat_with_history(messages)[-1]['content']
-
 
 if __name__ == "__main__":
     ans = _minimax([{'role':'user', 'content':"你是谁。"}])

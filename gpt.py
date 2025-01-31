@@ -3,7 +3,6 @@ import requests
 import json
 from openai import OpenAI
 
-
 class ChatGPT(TargetLLM):
     # your api_key
     api_key=""
@@ -16,7 +15,6 @@ class ChatGPT(TargetLLM):
             "gpt-3.5-turbo": "gpt-3.5-turbo",
             "gpt-4o": "gpt-4o",
             "gpt-4": "gpt-4"
-            
         }
         self.model_key = modes_dict[mode]
         #self.model_key = modes_dict.get(mode, modes_dict['gpt-4']) 
@@ -50,7 +48,6 @@ class ChatGPT(TargetLLM):
             "version": self.version
         }
     
-
 if __name__ == '__main__':
     llm = ChatGPT(mode='gpt-4o')
     ans = llm.chat('hello')

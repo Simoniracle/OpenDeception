@@ -13,11 +13,6 @@ class Qwen(TargetLLM):
         self.secret = secret
         self.debug = debug
         modes_dict = {
-            # "qwen-turbo": "qwen-turbo", # dashscope.Generation.Models.qwen_turbo,
-            # "qwen-plus": "qwen-plus", # dashscope.Generation.Models.qwen_plus,
-            # "qwen-max": "qwen-max", # dashscope.Generation.Models.qwen_max,
-            # "qwen2-0.5b-instruct": "qwen2-0.5b-instruct",
-            # "qwen2-1.5b-instruct": "qwen2-1.5b-instruct",
             "qwen2-7b-instruct": "qwen2-7b-instruct",
             "qwen2-72b-instruct": "qwen2-72b-instruct",
             "qwen2.5-3b-instruct":"qwen2.5-3b-instruct",
@@ -30,11 +25,10 @@ class Qwen(TargetLLM):
         self.model_key = modes_dict[mode]
         print(self.model_key)
         self.version = mode
-    # def chat(self, prompt:str)->str:        
+     
     def chat(self, messages)->str:
         response = dashscope.Generation.call(
             model=self.model_key,
-            # prompt=prompt
             messages = messages
         )
         try:
